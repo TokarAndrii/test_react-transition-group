@@ -41,13 +41,13 @@ export default styled.div`
 
   .item-enter {
     opacity: 0;
-    transform: translateX(-100%);
+    transform: translateX(-30%);
   }
 
   .item-enter-active {
     opacity: 1;
     transform: translateX(0);
-    transition: opacity 300ms ease-in-out, transform 1000ms ease-in-out;
+    transition: opacity 500ms ease-in-out, transform 1000ms ease-in-out;
   }
 
   .idInfoHolder {
