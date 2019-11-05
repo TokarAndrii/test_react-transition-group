@@ -34,7 +34,7 @@ const MyButton = () => {
   return (
     <>
       <Button type="default" onClick={handleToggle}>
-        click to appear div
+        click to toggle div
       </Button>
       <Transition in={showCard} mountOnEnter unmountOnExit timeout={duration}>
         {state => (
