@@ -3,7 +3,7 @@ import styled from "styled-components";
 export default styled.div`
   width: 50%;
   margin-top: 82px;
-  h2 {
+  text-align: center;
     text-align: center;
   }
 
@@ -18,6 +18,10 @@ export default styled.div`
     display: flex;
     justify-content: flex-start;
     align-items: center;
+  }
+
+  .btn {
+      margin-bottom: 24px;
   }
 
   /* .item {

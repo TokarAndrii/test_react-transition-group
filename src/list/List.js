@@ -28,7 +28,7 @@ const MyList = () => {
 
   return (
     <StylesList>
-      <Button type="primary" onClick={handleAddItem}>
+      <Button type="primary" onClick={handleAddItem} className="btn">
         Add Job
       </Button>
       {list && list.length > 0 && (
@@ -43,7 +43,13 @@ const MyList = () => {
             <TransitionGroup>
               {list.map(({ id, text }) => {
                 return (
-                  <CSSTransition key={id} timeout={700} classNames="item">
+                  <CSSTransition
+                    mountOnEnter
+                    unmountOnExit
+                    key={id}
+                    timeout={700}
+                    classNames="item"
+                  >
                     <List.Item>
                       <span className="idInfoHolder">
                         <span className="id">ID:</span>
