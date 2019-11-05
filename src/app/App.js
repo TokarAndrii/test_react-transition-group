@@ -1,5 +1,6 @@
 import React from "react";
 import TransitionExample from "../transition/Transition";
+import List from "../list/List";
 import StylesApp from "./StylesApp";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
         <div style={{ width: "500px" }}>
           <TransitionExample size="small"></TransitionExample>
         </div>
+        <List />
       </div>
     </StylesApp>
   );
